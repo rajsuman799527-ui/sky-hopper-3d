@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#8fd3ff">
+  <title>Sky Hopper 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="wrap">
+    <div id="stage">
+      <canvas id="game" aria-label="Sky Hopper 3D. Tap, click or press Space to jump."></canvas>
+
+      <div id="hud">
+        <div id="level">Level 1</div>
+        <div id="score">0</div>
+      </div>
+
+      <div id="banner" class="hidden"></div>
+
+      <div id="hint">
+        <div class="big">Tap to jump</div>
+        <div class="small">Space / click / touch &middot; 5 pipes = next level</div>
+      </div>
+
+      <div id="panel" class="hidden">
+        <div class="title">Game over</div>
+        <div class="row"><span>Score</span><b id="finalScore">0</b></div>
+        <div class="row"><span>Level</span><b id="finalLevel">1</b></div>
+        <div class="row"><span>Best</span><b id="bestScore">0</b></div>
+        <div class="retry">Tap to play again</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
